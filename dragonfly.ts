@@ -24,17 +24,16 @@ export const meta = {
   rows: 25,
   fps: 30,
   options: { scan: 5 },
-  // The logo's colour for a light page, then for a dark one; each as drawn, then twice lighter for the scan.
   palette: [
-    // Light mode
+    // Light mode — original 35% / 70% white blending
     "#8FBE00", // Base
-    "#729800", // Afterglow
-    "#567200", // Scan head
+    "#B6D559", // Afterglow
+    "#DDECB3", // Scan head
 
-    // Dark mode
+    // Dark mode — original 35% / 70% white blending
     "#C0FE04", // Base
-    "#E0FF82", // Afterglow
-    "#F6FFD9", // Scan head
+    "#D6FE5C", // Afterglow
+    "#ECFFB4", // Scan head
   ],
 } satisfies Meta<DragonflyOptions>;
 
