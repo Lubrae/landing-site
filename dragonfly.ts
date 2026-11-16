@@ -25,15 +25,15 @@ export const meta = {
   fps: 30,
   options: { scan: 5 },
   palette: [
-    // Light mode — softer trailing glow
+    // Light mode
     "#8FBE00", // Base
-    "#A5CB31", // Afterglow
-    "#C9DF83", // Scan head
+    "#9AC418", // Softer trailing glow
+    "#C9DF83", // Scan highlight
 
-    // Dark mode — original glow
+    // Dark mode
     "#C0FE04", // Base
-    "#D6FE5C", // Afterglow
-    "#ECFFB4", // Scan head
+    "#D6FE5C", // Trailing glow
+    "#ECFFB4", // Scan highlight
   ],
 } satisfies Meta<DragonflyOptions>;
 
