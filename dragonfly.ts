@@ -8,7 +8,7 @@
  * it would sink into it; in a <pre> it is one ink, from the same drawing. The
  * logo is a trademark of its owner, shown here to name the distribution.
  */
-import type { Frame, Meta } from "../types.ts";
+import type { Frame, Meta } from "ascii.rest";
 
 export interface DragonflyOptions {
   [key: string]: unknown;
