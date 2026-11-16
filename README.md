@@ -1,4 +1,9 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dragonfly.dark.svg">
-  <img alt="dragonfly" src="dragonfly.svg" width="400">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="assets/dragonfly/dragonfly.dark.svg">
+  <img
+    alt="dragonfly"
+    src="assets/dragonfly/dragonfly.svg"
+    width="400">
 </picture>
