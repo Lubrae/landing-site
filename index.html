@@ -73,7 +73,7 @@
 
   .logo-container h1 {
     position: absolute;
-    bottom: calc(100% + 12px);
+    bottom: calc(100% + 48px);
     left: 0;
     right: 0;
 
@@ -81,7 +81,7 @@
     text-align: center;
 
     font-family: "KH Interference", monospace;
-    font-size: clamp(13px, 3vw, 38px);
+    font-size: min(48px, calc((100vw - 40px) / 13.5));
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.2;
@@ -89,12 +89,12 @@
 
     color: #8FBE00;
   }
-
   @media (prefers-color-scheme: dark) {
     .logo-container h1 {
       color: #C0FE04;
     }
   }
+
   </style>
 
   <!-- Favicons -->
@@ -117,7 +117,7 @@
 <body>
   <main>
     <div class="logo-container">
-      <h1>ELECTRONIC DRAGONFLY_</h1>
+      <h1>[ELECTRONIC]ODONATA_</h1>
 
       <picture>
         <source
