@@ -25,12 +25,12 @@ export const meta = {
   fps: 30,
   options: { scan: 5 },
   palette: [
-    // Light mode — original 35% / 70% white blending
+    // Light mode — softer trailing glow
     "#8FBE00", // Base
-    "#B6D559", // Afterglow
-    "#DDECB3", // Scan head
+    "#A5CB31", // Afterglow
+    "#C9DF83", // Scan head
 
-    // Dark mode — original 35% / 70% white blending
+    // Dark mode — original glow
     "#C0FE04", // Base
     "#D6FE5C", // Afterglow
     "#ECFFB4", // Scan head
