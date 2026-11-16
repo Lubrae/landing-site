@@ -189,12 +189,17 @@
   </main>
   <script>
     const title = "[ELECTRONIC]ODONATA";
-    const speed = 60000 / (45 * 5); // 45 WPM
+
+    const speed = 100; // 120 WPM
+    const startDelay = 250; // Cursor appears first
 
     const typed = document.getElementById("typed-text");
     const live = document.querySelector(".type-live");
 
     let position = 0;
+
+    // Start with only the purple cursor visible
+    typed.textContent = "";
 
     function typeNext() {
       if (position < title.length) {
@@ -209,7 +214,9 @@
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       typed.textContent = title;
     } else {
-      document.fonts.ready.then(typeNext);
+      document.fonts.ready.then(() => {
+        setTimeout(typeNext, startDelay);
+      });
     }
   </script>
 </body>
