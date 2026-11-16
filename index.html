@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Dragonfly</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      background-color: #ffffff;
+    }
+
+    main {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    picture {
+      display: block;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      max-height: 80svh;
+      object-fit: contain;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #000000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <picture>
+      <source
+        media="(prefers-color-scheme: dark)"
+        srcset="./dragonfly.dark.svg"
+        type="image/svg+xml"
+      >
+      <img
+        src="./dragonfly.svg"
+        alt="Animated ASCII dragonfly"
+        width="800"
+        height="250"
+      >
+    </picture>
+  </main>
+</body>
+</html>
