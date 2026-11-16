@@ -55,6 +55,46 @@
         background-color: #000000;
       }
     }
+
+  @font-face {
+    font-family: "KH Interference";
+    src: url("./fonts/KHInterference-Regular.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .logo-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .logo-container h1 {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 0;
+    right: 0;
+
+    margin: 0;
+    text-align: center;
+
+    font-family: "KH Interference", monospace;
+    font-size: clamp(13px, 3vw, 38px);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    white-space: nowrap;
+
+    color: #8FBE00;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .logo-container h1 {
+      color: #C0FE04;
+    }
+  }
   </style>
 
   <!-- Favicons -->
@@ -76,19 +116,23 @@
 
 <body>
   <main>
-    <picture>
-      <source
-        media="(prefers-color-scheme: dark)"
-        srcset="./dragonfly.dark.svg"
-        type="image/svg+xml"
-      >
-      <img
-        src="./dragonfly.svg"
-        alt="Animated ASCII dragonfly"
-        width="800"
-        height="250"
-      >
-    </picture>
+    <div class="logo-container">
+      <h1>ELECTRONIC DRAGONFLY_</h1>
+
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="./dragonfly.dark.svg"
+          type="image/svg+xml"
+        >
+        <img
+          src="./dragonfly.svg"
+          alt="ASCII dragonfly"
+          width="800"
+          height="250"
+        >
+      </picture>
+    </div>
   </main>
 </body>
 </html>
